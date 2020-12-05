@@ -118,7 +118,7 @@ class App extends React.Component {
   }
   render() {
     return(
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/admin" render={() => <Admin handleChange = {this.handleChange}
           newItem = {this.state.newItem}
