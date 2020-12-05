@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {HashRouter, Route, Switch} from 'react-router-dom'
 import {Navigation, Welcome, Projects, Contacts, Admin} from './Components/Components'
 import {AddItem, getState, DeleteItem, EditItem, authUser, SignOut} from './fire'
 
@@ -118,7 +118,7 @@ class App extends React.Component {
   }
   render() {
     return(
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename='/'>
         <Switch>
           <Route path="/admin" render={() => <Admin handleChange = {this.handleChange}
           newItem = {this.state.newItem}
@@ -138,7 +138,7 @@ class App extends React.Component {
             <Contacts contacts = {this.state.contacts}/>
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
       )
   }
 }
