@@ -24,11 +24,9 @@ let authUser = (email, password) => {
         let uid = firebase.auth().signInWithEmailAndPassword(email, password)
         .then((user) => {
             let uid = user.user.uid
-            console.log(user)
             return uid
         })
         .catch((error) => {
-            console.log(error)
             console.log('ERROR')
         })
         return uid
@@ -39,7 +37,6 @@ let authUser = (email, password) => {
         var errorMessage = error.message;
     });
     let User = firebase.auth().currentUser;
-    console.log(User)
     return uid
 }
 

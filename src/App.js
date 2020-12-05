@@ -112,13 +112,11 @@ class App extends React.Component {
     let iLogin = this.state.admin.login;
     let iPassword = this.state.admin.password;
     let uid = await authUser(iLogin, iPassword)
-    console.log(uid)
-    if(uid === this.state.data.admin.uid) this.setState({isAdmin: !this.state.isAdmin})
-    else console.log('ADMIN LOGIN FAIL')
+    if(typeof uid === 'string') this.setState({isAdmin: !this.state.isAdmin})
   }
   render() {
     return(
-      <HashRouter basename='/'>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/admin" render={() => <Admin handleChange = {this.handleChange}
           newItem = {this.state.newItem}
