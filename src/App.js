@@ -66,9 +66,8 @@ class App extends React.Component {
         img: 'img/02.webp'
       },
       admin: {
-        login: 'admin@admin.com',
-        password: 'AdminPass',
-        uid: ''
+        login: '',
+        password: ''
       }
     }
     
