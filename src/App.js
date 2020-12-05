@@ -28,8 +28,8 @@ class App extends React.Component {
           url: '#work'
         },
         {
-          name: 'Contact',
-          url: '#contact'
+          name: 'Contacts',
+          url: '#contacts'
         }
       ],
       contacts: [
