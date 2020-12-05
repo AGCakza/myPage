@@ -15,7 +15,7 @@
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "https://agcakza.github.io/myPage/",
+  "homepage": "https://agcakza.github.io/myPage",
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
