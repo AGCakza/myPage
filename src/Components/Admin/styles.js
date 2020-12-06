@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import bg from './../../assets/img/bg.jpg'
 
 export const AdminDiv = styled.div `
 color: white;
 min-height: 100vh;
 height: 100%;
-background: url("https://c4.wallpaperflare.com/wallpaper/878/162/420/blurred-colorful-vertical-portrait-display-wallpaper-preview.jpg") center center/ cover;
+background: url(${bg}) center center/ cover;
 display: flex;
 flex-direction: column;
 align-items: center;
