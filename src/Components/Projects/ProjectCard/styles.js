@@ -36,7 +36,7 @@ overflow: hidden;
 export const Img = styled.img `
 transform-origin:  top;
 object-fit: cover;
-width: 100%;
+width: 150%;
 transition: all 0.3s ease-out;
 `
 
